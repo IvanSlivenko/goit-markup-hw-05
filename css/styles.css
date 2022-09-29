@@ -420,6 +420,8 @@ margin-left: 94px;
 .tel:focus {
 
   color: var(--color-current);
+  transform: translate();
+  transition: 250ms ;
 }
 .mailto:hover .icon-contacts-envelope{
   fill:var(--color-current) ;
