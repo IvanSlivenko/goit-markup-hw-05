@@ -226,6 +226,7 @@ margin-right: auto;
 }
 .directions-items{
   margin-right: 30px;
+  position: relative;
 }
 .directions-items:last-child{
   margin-right:0px; 
@@ -234,6 +235,37 @@ margin-right: auto;
 .img-direction{
   display: block;
 }
+
+.directions-title-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+width: 100%;
+height: 70px;
+background-color: rgba(47, 48, 58, 0.8);
+position: absolute;
+bottom: 0px;
+left: 0px;
+
+
+}
+.directions-title-two{
+margin-top: auto;
+margin-bottom: auto;
+/* margin-left: auto;
+margin-right: auto; */
+font-weight: 700;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color:  #FFFFFF;
+}
+
+
+
 
 .gpoup-our-teams{
   
@@ -366,7 +398,28 @@ margin-left: 94px;
 
 .nav-list.current {
   color: var(--color-current);
+  position: relative;
 }
+
+.nav-list.current::after {
+  display: block;
+  position: absolute;
+  top: 93%;
+  
+  content:"";
+  /* color:var(--color-current) ;  */
+  background:var(--color-current) ;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+
+  
+  
+  
+}
+
+
+
 .nav-list {
   
   color: var(--primary-text-kolor);
@@ -379,7 +432,10 @@ margin-left: 94px;
   display: block;
   padding-top:32px;
   padding-bottom:32px;
-  
+
+  transition-property: color;
+  transition-duration: 250ms;
+  /* cubic-bezier(0.4, 0, 0.2, 1) */
 
 }
 .nav-logo-left{
@@ -407,6 +463,9 @@ margin-left: 94px;
   padding-top:32px;
   padding-bottom:32px;
   align-items: center;
+
+  transition-property:color,fill;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
   
 }
@@ -420,9 +479,21 @@ margin-left: 94px;
 .tel:focus {
 
   color: var(--color-current);
-  transform: translate();
-  transition: 250ms ;
+  
+
 }
+.icon-contacts-envelope{
+  transition-property: fill;
+  transition-duration: 250ms;
+
+}
+.icon-contacts-smartphone{
+  transition-property: fill;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
 .mailto:hover .icon-contacts-envelope{
   fill:var(--color-current) ;
 }
@@ -448,6 +519,9 @@ margin-left: 94px;
 
 .mailto-boxsutdio{
   margin-right: 50px;
+  transition-property: fill;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .mailto-boxsutdio:hover{
@@ -499,6 +573,9 @@ margin-left: 94px;
   padding-right: 32px;
   padding-bottom: 10px;
   border-color: transparent;
+
+  transition-property: background-color;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
@@ -650,13 +727,8 @@ flex-basis: calc((100% - 90px) / 4);
   box-shadow: 0px 10px 10px -5px rgba(194, 194, 194, 0.8);
 
 }
-/* .our-teams-iist:hover {
-  background:var(--color-background-oun);
-  box-shadow: 0px 10px 10px -5px rgba(194, 194, 194, 0.8);
-} */
-.our-teams-iist:last-child{
-  /* margin-right: 0px; */
-}
+
+
 .our-teams-title {
   color: var(--color-our-teams-title);
   font-size: 36px;
@@ -723,6 +795,9 @@ flex-basis: calc((100% - 90px) / 4);
   height: 44px;
   border-radius: 50%;
 
+  transition-property: background-color;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .link-icon:hover{
   
@@ -755,6 +830,7 @@ flex-basis: calc((100% - 90px) / 4);
 
 .link-icon:focus .icon-size-cocialiteam{
    fill: white;
+  
 }
 
 
@@ -775,6 +851,8 @@ flex-basis: calc((100% - 90px) / 4);
   padding-top: 5px;
   margin-right: 5px;
   fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .icon-contacts-envelope:hover{
@@ -795,6 +873,8 @@ flex-basis: calc((100% - 90px) / 4);
   padding-top: 5px;
   margin-right: 5px;
   fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
   
 }
@@ -867,6 +947,9 @@ flex-basis: calc((100% - 90px) / 4);
   width: 20px;
   height: 20px;
   fill: #ffffff;
+
+  transition-property: fill;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 
 }
@@ -914,6 +997,10 @@ padding-bottom: 94px;
 
   border: 1px solid  #AFB1B8;
   border-radius: 4%;
+
+  transition-property:border ;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   }
   .logo-box:hover{
     border: 1px solid  #2196F3;
@@ -930,6 +1017,8 @@ padding-bottom: 94px;
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
 .logo-box:hover .client-box-cvg{
 
@@ -1001,9 +1090,20 @@ margin-right: auto;
   justify-content: center;
 }
 
-.Link-cocial-footerstudio:hover{
+.Link-cocial-footerstudio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-   background-color: #2196F3;
+
+  transition-property: background-color;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.Link-cocial-footerstudio:hover{
+    border-radius: 50%;
+    background-color: #2196F3;
  }
 
 .Link-cocial-footerstudio:focus{
@@ -1015,13 +1115,7 @@ margin-right: auto;
   margin-right: 0px;
 }
 
-.Link-cocial-footerstudio{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
+
 
 
 .footer {
@@ -1051,6 +1145,9 @@ margin-right: auto;
   letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom:0px;
+  
+  transition-property: color;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-item-two {
   color: rgba(100%, 100%, 100%, 60%);
@@ -1272,6 +1369,8 @@ justify-content: center;
   border: 0px;
   cursor: pointer;
   line-height: var(--lin-heit-five);
+  transition-property: background-color , color , box-shadow;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
  
 
 }
@@ -1279,8 +1378,8 @@ justify-content: center;
 .button-one:hover,
 .button-one:focus {
   border: 0ch;
-  
-  background: var(--color-current);
+  background-color:var(--color-current); ;
+  /* background: var(--color-current); */
   color:var( --color-background-oun);
   box-shadow: 0px 10px 10px -5px rgba(194, 194, 194, 0.8);
 }
@@ -1401,7 +1500,8 @@ justify-content: center;
 .ablock-galery-item{
   display: block;
   text-decoration: none;
-  
+ transition-property: box-shadow;
+ transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   
   
   }
@@ -1547,6 +1647,18 @@ margin-right: auto;
   margin-right: 0px;
 }
 
+.Link-cocial-footergalery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .Link-cocial-footergalery:hover{
    border-radius: 50%;
    background-color: #2196F3;
@@ -1557,10 +1669,4 @@ margin-right: auto;
    background-color: #2196F3;
 }
 
-.Link-cocial-footergalery{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-}
+
