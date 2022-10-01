@@ -74,13 +74,25 @@
     </header>
 
     <main>
+
+      <div data-modal class="Backdrop is-hidden">
+        <div class="modal">
+            <div class="button-modal-box">
+              <button data-modal-close class="button-modal">
+                <img src="./img/clouse-modal-2.svg" class="button-modal-img" 
+                alt="clouse">
+              </button>
+          </div>
+        </div>
+      </div>
       <!-- Hero section -->
     
         <section class="Hero Hero-img">
           <div class="container hero-box">
-           
+
+            
           <h1 class="hero-title"> Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-button">Замовити послугу</button>
+          <button data-modal-open type="button" class="hero-button" >Замовити послугу</button>
         </div>
         </section>
 
@@ -539,5 +551,9 @@
         
       </div>
     </footer>
+
+    <!-- Ставимо перед закриваючим тегом body -->
+    <script src="./js/modal.js"></script>
+
   </body>
 </html>
