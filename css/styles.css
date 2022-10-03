@@ -1209,6 +1209,7 @@ margin-right: auto;
   font-weight: 700;
   line-height: var(--lin-heit-three) ;
   letter-spacing: 0.06em;
+  text-decoration: none;
 }
 .galery-Paragraf {
   color: var(--second-text-kolor);
@@ -1216,6 +1217,7 @@ margin-right: auto;
   font-weight: normal;
   line-height:var(--lin-heit-four) ;
   letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .header-block-galery{
@@ -1489,7 +1491,7 @@ justify-content: center;
   margin-bottom: 0px; */
 }
 
-.block-galery-item{
+.ablock-galery-item{
   display: block;
   text-decoration: none;
  
@@ -1498,6 +1500,7 @@ justify-content: center;
   
   
   }
+
 .ablock-galery-item:hover{
 display: block;
 text-decoration: none;
