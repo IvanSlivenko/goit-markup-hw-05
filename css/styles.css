@@ -83,6 +83,7 @@ body {
   
   display: flex;
   align-items: center;
+  border-bottom: 1px solid var(--color-border-hedergalery);
 
 }
 
@@ -404,7 +405,7 @@ margin-left: 94px;
 .nav-list.current::after {
   display: block;
   position: absolute;
-  top: 93%;
+  bottom: -1px;
   
   content:"";
   /* color:var(--color-current) ;  */
@@ -574,7 +575,7 @@ margin-left: 94px;
   border-color: transparent;
 
   
-  transition:background-color 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 
@@ -1782,7 +1783,7 @@ margin-right: auto;
     top: 8px;
     right: 8px;
 
-    
+    cursor: pointer;
     
    }
    
